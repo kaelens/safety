@@ -3,8 +3,8 @@
 ## How to run the front end
 
 Install npm and sass using:
-## npm install
-## npm install node-sass
+### 'npm install'
+### 'npm install node-sass'
 
 Start the server using:
-## npm start
+### 'npm start'
