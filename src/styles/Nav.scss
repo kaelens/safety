@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display&display=swap");
+
+$font-stack: "Montserrat", sans-serif;
+$text-color: white;
+$highlight-color: #6e47de;
+
+#nav {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: $font-stack;
+  align-items: center;
+  margin-top: 30px;
+  display: table;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  h1 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: $text-color;
+    font-size: 25px;
+    float: left;
+    margin-left: 2em;
+    white-space: nowrap;
+  }
+
+  p {
+    text-align: center;
+    color: $text-color;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    padding: 0 30px;
+    transition: 0.3s ease-in-out;
+    float: right;
+    right: 0;
+    margin: auto;
+    display: table;
+
+    p {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+
+//   .form-link {
+//     padding: 0 30px;
+//     transition: 0.3s ease-in-out;
+//     background-color: $highlight-color;
+//     border-radius: 15px;
+//     display: flex;
+//     align-items: center;
+//     margin-left: 2em;
+//     display: table;
+
+//     p {
+//       display: table-cell;
+//       text-align: center;
+//       vertical-align: middle;
+//       transition: 0.1s ease-in-out;
+//       &:hover {
+//         color: black;
+//       }
+//     }
+//   }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display&display=swap");
+
+$bgd-color: #1c3384;
+$secondary-color: #599cff;
+$font-stack: "Montserrat", sans-serif;
+$secondary-font-stack: "Playfair Display", sans-serif;
+$text-color: white;
+$highlight-color: #6e47de;
+
+#About {
+  h1,
+  h3,
+  p {
+    font-family: $font-stack;
+    color: white;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+    float: left;
+    font-size: 100px;
+  }
+
+  .desc {
+    margin: 100px auto;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    line-height: 2;
+
+    p {
+      width: 60%;
+      float: right;
+    }
+  }
+
+  .instruction {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 2;
+    img {
+      float: left;
+      width: 400px;
+      height: 283.33px;
+    }
+
+    h3,
+    p {
+      width: 65%;
+      float: right;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+  }
+}
