@@ -80,7 +80,7 @@ class Form extends Component {
         
       })
       .catch((error) => {
-        alert("not wotking!");
+        alert("Please try again");
         var btn = document.querySelector(".submit");
         btn.classList.toggle("fail");
       });
