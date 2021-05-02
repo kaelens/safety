@@ -1,14 +1,18 @@
-# Medical devices safety intelligence
+# Medical Device Safety Intelligence
 
-## How to run the front end
+NSC 325
+Spring 2021
+About project
 
-Install npm and sass using:
-```sh
-npm install
-npm install node-sass
-```
+## How to run locally
 
-Start the server using:
-```sh
-npm start
-```
+Install package manager in project directory using:
+
+### 'npm install'
+
+### npm install node-sass
+
+Start the server
+
+### npm start
+
