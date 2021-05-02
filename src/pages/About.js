@@ -3,15 +3,17 @@ import Med from "../assets/about-bgd/medicine-icon.svg";
 import "../styles/About.scss";
 
 class About extends Component {
+  componentDidMount() {
+    document.body.style.background =
+      "#1c3384 url('../images/about-blob.svg') no-repeat";
+    document.body.style.backgroundSize = "cover";
+  }
+
+  componentWillUnmount() {
+    document.body.style.background = "#1c3384";
+  }
+
   render() {
-    const instructions = [
-      {
-        message:
-          "1. Fill out the provided json files with the registered devices.",
-      },
-      { message: "2. Submit the sheet" },
-      { message: "3. You're all set!" },
-    ];
     return (
       <div id="About">
         <h1>About</h1>
@@ -33,16 +35,7 @@ class About extends Component {
             updated.
           </p>
         </div>
-
-        <div class="instruction">
-          <img src={Med} />
-          <h3>
-            <b>Instructions of Use:</b>
-          </h3>
-          {instructions.map((list) => (
-            <p>{list.message}</p>
-          ))}
-        </div>
+        <img class="graphic" src={Med} alt="" />
       </div>
     );
   }

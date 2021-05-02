@@ -35,7 +35,7 @@ class Nav extends Component {
   render() {
     return (
       <div id="nav">
-        <h1>Project name</h1>
+        <h1>TechSave</h1>
         {this.renderLinks()}
         {/* {this.renderForm()} */}
       </div>
