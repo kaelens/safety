@@ -58,13 +58,15 @@ class Form extends Component {
     const formData = new FormData();
 
     formData.append("myFile", this.state.selectedFile);
+    console.log(this.state.selectedFile);
 
     axios({
       method: "post",
       url: "http://localhost:8000/",
-      params: {
-        formData,
-      },
+      data: formData,
+      headers: {
+        "Content-type": "multipart/form-data"
+      }
     })
       .then((response) => {
         this.setState(
@@ -81,8 +83,8 @@ class Form extends Component {
       })
       .catch((error) => {
         alert("Please try again");
-        var btn = document.querySelector(".submit");
-        btn.classList.toggle("fail");
+        // var btn = document.querySelector(".submit");
+        // btn.classList.toggle("fail");
       });
 
       formClass.reset();

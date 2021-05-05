@@ -7,7 +7,7 @@ app.use(cors());
 
 var storage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, 'public')
+        cb(null, './public/uploads')
     },
     filename: function (req, file, cb) {
         cb(null, Date.now() + '-' + file.originalname)
@@ -18,10 +18,12 @@ app.get('/', function (req, res) {
     res.send(req.file)
 });
 
-var upload = multer({ storage: storage }).single('file')
+var upload = multer({ storage: storage }).single('myFile');
+
 
 app.post('/', function(req, res) {
     upload(req, res, function(err) {
+        console.log(err);
         if (err instanceof multer.MulterError) {
             return res.status(500).json(err)
         } else if (err) {
